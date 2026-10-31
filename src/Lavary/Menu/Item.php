@@ -426,10 +426,10 @@ class Item
     /**
      * Activate the item.
      *
-     * @param Item $item
+     * @param Item|null $item
      * @param bool $recursion
      */
-    public function activate(Item $item = null, $recursion = false)
+    public function activate(?Item $item = null, $recursion = false)
     {
         $item = is_null($item) ? $this : $item;
 
